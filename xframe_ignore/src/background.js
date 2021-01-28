@@ -9,6 +9,7 @@ chrome.webRequest.onHeadersReceived.addListener(
         !HEADERS_TO_STRIP_LOWERCASE.includes(header.name.toLowerCase()))
   }),
   {
-    urls: ['<all_urls>']
+      urls: ['https://www.twitch.tv/*']
   },
   ['blocking', 'responseHeaders']);
+
